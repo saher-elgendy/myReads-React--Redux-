@@ -4,12 +4,13 @@ import {connect } from 'react-redux';
 
 const Book = (props) => {
   const { book } = props;
+  
   return (
    <div className="book">
     <div
       className="book-image-cont"
       style={{
-	     backgroundImage: `url(${props.book.imageLinks.thumbnail})`
+	     backgroundImage: `url(${book.imageLinks.thumbnail})`
 	   }}
     >
     <ShelfChanger book={book}/>
