@@ -1,0 +1,12 @@
+import React, { Component} from 'react';
+
+
+const Header = () => {
+	return(
+      <header className="header">
+        <h1>MY READS</h1>
+      </header>
+	)
+}
+
+export default Header;

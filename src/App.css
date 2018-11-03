@@ -1,0 +1,165 @@
+.App {
+  text-align: center;
+  margin: auto;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: 15vh;
+  background: green;
+  padding: 20px 0;  
+  box-sizing: border-box;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.book {
+  width: 100px;
+  height: 100px;
+}
+
+.shelf {
+  border-bottom: 2px solid #aaa;
+  max-width: 900px;
+  margin: auto;
+  height: auto;
+  min-height: 45vh;
+  padding: 20px;
+}
+
+.shelf h2 {
+  float: left;
+  color: green;
+  margin-left: 10px;
+}
+
+.shelf:nth-of-type(3) {
+  border-bottom: none;
+}
+
+.book-image-cont {
+  height: 20vh;
+}
+
+.book-shelf {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+ 
+}
+
+.book {
+  margin-left: 5%;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book-list li {
+  border: 1px solid #eee;
+}
+
+.open-search a{
+  position: fixed; 
+  right:25px;
+  bottom: 25px;
+  width: 40px;
+  height: 40px;
+  background-image: url('./icons/add.svg');
+  background-color: #2e7d32;
+  box-shadow: 0 3px 6px #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.search-input {
+  margin-top: 5vh;
+  width: 30%;
+  height: 5vh;
+  font-size: 0.9em;
+  padding: 0 5px;
+  transition: 0.5s ease;
+}
+
+.search-input:focus {
+  width: 50%;
+  font-size: 1em;
+}
+
+.found-books-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  padding: 0;
+
+}
+
+.found-book {
+  margin: 10vh 3%;
+  width: 10%;
+}
+
+.shelf-changer {
+  position: relative;
+  top: 90%;
+}
+
+.select-shelf select{
+  width: 20px;
+  border-radius: 50%;
+  float: right;
+  background: #c0ff00;
+  outline: none;
+  border: none;
+}
+
+.select-shelf select option{
+  background: white;
+}
+@media screen and (max-width: 600px) {
+  html, body {
+    font-size: .9em;
+  }
+
+  .search-input {
+    width:80%;
+  }
+  .search-input:focus {
+    width: 95%;
+    margin: auto;
+    margin-top: 5vh;
+  }
+  
+  .found-book {
+    width: 20%;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  html, body {
+    font-size: .8em;
+  }
+  
+  .found-book {
+    width: 30%;
+  }
+}
+
+
+
+
