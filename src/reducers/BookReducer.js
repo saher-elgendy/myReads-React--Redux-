@@ -1,6 +1,5 @@
 
 
-import * as BooksAPI from '../BooksAPI';
 
 const initialState = {
   books: [],
