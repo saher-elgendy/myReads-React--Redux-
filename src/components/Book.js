@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ShelfChanger from './shelfChanger'
-import {connect } from 'react-redux'
+import {connect } from 'react-redux';
+
 const Book = (props) => {
   const { book } = props;
   return (
