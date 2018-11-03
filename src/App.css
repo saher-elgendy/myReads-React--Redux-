@@ -21,11 +21,6 @@ h1 {
   text-align: center;
 }
 
-/*.book {
-  width: 100px;
-  height: 100px;
-}*/
-
 .shelf {
   border-bottom: 2px solid #aaa;
   max-width: 900px;
@@ -125,12 +120,12 @@ h1 {
 
 .select-shelf select{
   width: 20px;
-  border-radius: 50%;
   float: right;
-  background: #c0ff00;
   outline: none;
   border: none;
 }
+
+
 
 .select-shelf select option{
   background: white;
