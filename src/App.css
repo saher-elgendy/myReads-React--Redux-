@@ -52,13 +52,18 @@ h1 {
 .book-shelf {
   width: 95%;
   display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
   justify-content: center;
   margin: auto;
  
 }
 
 .book {
-  margin-left: 5%;
+  width: 15%;
+  height: 100px;
+  min-width: 100px;
+  margin-bottom: 15%;
 }
 
 .book-list {
