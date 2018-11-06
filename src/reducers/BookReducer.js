@@ -28,10 +28,11 @@ const initialState = {
 
     case 'GET_BOOK':
        return {
-         ...state,
+         ...state,       
          //when change a book shelf in search page, 
          //remove the book if exist then concat it again with the new shelf
-         books: state.books.filter(book => book.id !== action.book.id).concat({...action.book, shelf: action.shelf})
+         books: state.books.filter(book => book.id !== action.book.id).concat({...action.book, shelf: action.shelf}),
+         
        }
 
      default: 

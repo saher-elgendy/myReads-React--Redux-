@@ -15,7 +15,14 @@ class SearchPage extends Component {
   render() {
     const { query, foundBooks, setQuery, searchBooks, books } = this.props;
 
-    console.log(foundBooks)
+    const showingFoundBooks = [...foundBooks];
+    //this will make book shelf in sync in both pages
+    showingFoundBooks.forEach(showingBook => books.map(book => {
+      if(showingBook.id === book.id) {
+        showingBook.shelf = book.shelf;
+      } 
+    }))
+
     return(
       <div className="search">
         <input
@@ -31,7 +38,7 @@ class SearchPage extends Component {
       
         <div className="books-grid">
           <ul className="found-books-list">
-            { foundBooks.length ? foundBooks.map(book => (
+            { showingFoundBooks.length ? showingFoundBooks.map(book => (
               <li key={book.id} className="found-book">   
                 <Book  book={book} />
               </li>             
