@@ -15,7 +15,7 @@ class SearchPage extends Component {
   render() {
     const { query, foundBooks, setQuery, searchBooks, books } = this.props;
 
-    const showingFoundBooks = [...foundBooks];
+    const showingFoundBooks = [...foundBooks].filter(book => book.imageLinks);
     //this will make book shelf in sync in both pages
     showingFoundBooks.forEach(showingBook => books.map(book => {
       if(showingBook.id === book.id) {

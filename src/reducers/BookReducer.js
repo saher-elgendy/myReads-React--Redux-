@@ -23,7 +23,7 @@ const initialState = {
      case 'SEARCH_BOOKS':
        return {
          ...state,
-         foundBooks: action.foundBooks.filter(book => book.imageLinks)
+         foundBooks: action.foundBooks
        }
 
     case 'GET_BOOK':
